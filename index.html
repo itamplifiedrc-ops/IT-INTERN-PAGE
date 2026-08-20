@@ -98,23 +98,22 @@
   </header>
 
   <!-- Mobile Drawer -->
-  <div class="modal-overlay" id="mobile-drawer-overlay" style="align-items: flex-start; padding-top: 80px;"
-    aria-hidden="true">
-    <div
-      style="background: #FFF; width: 100%; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 16px;">
-      <a href="#overview" class="nav-menu-link mobile-link" style="font-size: 1.125rem; font-weight: 600;">Overview</a>
-      <a href="#program" class="nav-menu-link mobile-link" style="font-size: 1.125rem; font-weight: 600;">Program</a>
-      <a href="#certificate-generator" class="nav-menu-link mobile-link" style="font-size: 1.125rem; font-weight: 600;">Simulator</a>
-      <a href="#faq" class="nav-menu-link mobile-link" style="font-size: 1.125rem; font-weight: 600;">FAQ</a>
-      <a href="#contact" class="nav-menu-link mobile-link" style="font-size: 1.125rem; font-weight: 600;">Contact</a>
+  <div class="modal-overlay" id="mobile-drawer-overlay" aria-hidden="true">
+    <div class="mobile-drawer-card">
+      <a href="#overview" class="mobile-link">Overview</a>
+      <a href="#program" class="mobile-link">Program</a>
+      <a href="#certificate-generator" class="mobile-link">Simulator</a>
+      <a href="#faq" class="mobile-link">FAQ</a>
+      <a href="#contact" class="mobile-link">Contact</a>
       <a href="https://nclexamplifiedreviewcenter.com/" target="_blank" rel="noopener noreferrer"
-        class="nav-menu-link mobile-link"
-        style="font-size: 1.125rem; font-weight: 600; color: #3B52A5; display: flex; align-items: center; justify-content: space-between;">
+        class="mobile-link mobile-link-official">
         <span>Official Website</span>
-        <span>↗</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="7" y1="17" x2="17" y2="7"></line>
+          <polyline points="7 7 17 7 17 17"></polyline>
+        </svg>
       </a>
-      <button class="btn btn-primary open-apply-modal" type="button" style="width: 100%; margin-top: 8px;">Apply
-        Now</button>
+      <button class="btn btn-primary open-apply-modal btn-mobile-drawer-apply" type="button">Apply Now</button>
     </div>
   </div>
 
