@@ -5920,6 +5920,19 @@ body.hero-intro-reveal .hero-headline {
   box-shadow: 0 2px 8px rgba(59, 82, 165, 0.35);
 }
 
+.tab-text-short {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .tab-text-full {
+    display: none;
+  }
+  .tab-text-short {
+    display: inline;
+  }
+}
+
 /* User Profile Chip inside Hero Live Portal Window */
 .dash-header-right {
   display: flex;
@@ -6350,7 +6363,7 @@ body.hero-intro-reveal .hero-headline {
 @media (max-width: 640px) {
   .dash-window-header {
     padding: 8px 10px;
-    gap: 8px;
+    gap: 7px;
     flex-direction: column;
     align-items: stretch;
   }
@@ -6360,6 +6373,54 @@ body.hero-intro-reveal .hero-headline {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    gap: 6px;
+  }
+
+  .dash-os-dots {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+  }
+
+  .os-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .dash-window-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    min-width: 0;
+    justify-content: flex-end;
+  }
+
+  .dash-live-badge {
+    font-size: 0.5625rem;
+    padding: 1.5px 6px;
+    gap: 3px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    letter-spacing: 0.02em;
+  }
+
+  .pulse-dot {
+    width: 5px;
+    height: 5px;
+  }
+
+  .dash-title-text {
+    font-size: 0.6875rem;
+    color: #94A3B8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+  }
+
+  .dash-header-right {
+    display: none !important;
   }
 
   .dash-tab-bar {
@@ -6370,13 +6431,15 @@ body.hero-intro-reveal .hero-headline {
     gap: 2px;
     border-radius: 8px;
     box-sizing: border-box;
+    background: #090E1A;
   }
 
   .dash-tab {
     flex: 1;
     text-align: center;
-    padding: 5px 3px;
-    font-size: 0.71875rem;
+    padding: 5px 2px;
+    font-size: 0.6875rem;
+    font-weight: 600;
     white-space: nowrap;
     border-radius: 6px;
   }

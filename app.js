@@ -214,18 +214,24 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    // Hero Mockup Perspective Scale Resizing
+    // Hero Mockup Perspective Scale Resizing (Desktop Only - Flat Crisp on Mobile)
     if (mockupWindow && heroSection) {
+      const isMobile = window.innerWidth <= 768;
+      if (isMobile) {
+        mockupWindow.style.transform = 'none';
+        mockupWindow.style.boxShadow = '0 20px 50px -10px rgba(2, 6, 23, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05)';
+        return;
+      }
+
       const heroRect = heroSection.getBoundingClientRect();
       const maxScrollDistance = 450;
       
       const scrolled = Math.max(0, -heroRect.top);
       const progress = Math.min(scrolled / maxScrollDistance, 1.0);
 
-      const isMobile = window.innerWidth <= 768;
-      const startScale = isMobile ? 1.04 : 1.14;
+      const startScale = 1.12;
       const endScale = 1.00;
-      const startRotate = isMobile ? 3.0 : 6.5;
+      const startRotate = 5.5;
       const endRotate = 0.0;
 
       const currentScale = startScale - (progress * (startScale - endScale));
