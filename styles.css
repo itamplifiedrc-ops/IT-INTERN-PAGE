@@ -5691,18 +5691,14 @@ body.hero-intro-reveal .hero-headline {
   display: block;
 }
 
-/* --- Panel 1: DTR Styles --- */
+/* --- Panel 1: Automated DTR System Responsive Styles --- */
 .dtr-grid-layout {
   display: grid;
   grid-template-columns: 310px 1fr;
   gap: 16px;
   align-items: stretch;
-}
-
-@media (max-width: 900px) {
-  .dtr-grid-layout {
-    grid-template-columns: 1fr;
-  }
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .dtr-action-card, .dtr-table-card {
@@ -5713,8 +5709,9 @@ body.hero-intro-reveal .hero-headline {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 320px;
+  min-height: 320px;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .dtr-action-card {
@@ -5726,7 +5723,6 @@ body.hero-intro-reveal .hero-headline {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  height: 24px;
   min-height: 24px;
 }
 
@@ -5773,13 +5769,14 @@ body.hero-intro-reveal .hero-headline {
 }
 
 .dtr-clock-display {
-  font-size: 2.125rem;
+  font-size: clamp(1.75rem, 3.5vw, 2.125rem);
   font-weight: 800;
   color: #FFFFFF;
   letter-spacing: -0.02em;
   font-variant-numeric: tabular-nums;
   font-feature-settings: "tnum";
-  line-height: 1;
+  line-height: 1.1;
+  margin: 2px 0;
 }
 
 .dtr-date-display {
@@ -5791,12 +5788,13 @@ body.hero-intro-reveal .hero-headline {
 .dtr-controls-group {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
 }
 
 .btn-dtr-clock {
   width: 100%;
-  height: 42px;
+  min-height: 44px;
+  height: 44px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -5810,13 +5808,17 @@ body.hero-intro-reveal .hero-headline {
   letter-spacing: 0.02em;
   border: none;
   cursor: pointer;
-  transition: background 0.15s ease;
+  transition: background 0.15s ease, transform 0.1s ease;
   box-shadow: 0 4px 12px rgba(59, 82, 165, 0.3);
   box-sizing: border-box;
 }
 
 .btn-dtr-clock:hover {
   background: #2D3F82;
+}
+
+.btn-dtr-clock:active {
+  transform: scale(0.99);
 }
 
 .btn-dtr-clock.is-clocked-in {
@@ -5832,15 +5834,12 @@ body.hero-intro-reveal .hero-headline {
   font-size: 0.71875rem;
   color: #64748B;
   text-align: center;
-  height: 22px;
-  min-height: 22px;
+  min-height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 1.2;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  line-height: 1.3;
+  word-break: break-word;
 }
 
 .dtr-progress-widget {
@@ -5853,6 +5852,7 @@ body.hero-intro-reveal .hero-headline {
   flex-direction: column;
   gap: 6px;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .dtr-prog-header, .dtr-prog-footer {
@@ -5861,6 +5861,7 @@ body.hero-intro-reveal .hero-headline {
   justify-content: space-between;
   font-size: 0.71875rem;
   color: #8C9BB0;
+  gap: 8px;
 }
 
 .dtr-prog-header strong {
@@ -5873,6 +5874,7 @@ body.hero-intro-reveal .hero-headline {
   background: #18263D;
   border-radius: 9999px;
   overflow: hidden;
+  width: 100%;
 }
 
 .dtr-prog-bar-fill {
@@ -5896,7 +5898,6 @@ body.hero-intro-reveal .hero-headline {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 8px;
-  height: 32px;
   min-height: 32px;
 }
 
@@ -5927,6 +5928,7 @@ body.hero-intro-reveal .hero-headline {
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
 }
 
 .btn-dtr-export:hover {
@@ -5946,6 +5948,7 @@ body.hero-intro-reveal .hero-headline {
   scrollbar-width: thin;
   scrollbar-color: #1E2D4A #0A1120;
   box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
 }
 
 .dtr-table-wrapper::-webkit-scrollbar {
@@ -5980,12 +5983,14 @@ body.hero-intro-reveal .hero-headline {
   position: sticky;
   top: 0;
   z-index: 2;
+  white-space: nowrap;
 }
 
 .dtr-data-table td {
   padding: 9px 12px;
   color: #E2E8F0;
   border-bottom: 1px solid #141F36;
+  white-space: nowrap;
 }
 
 .dtr-empty-state-cell {
@@ -5997,6 +6002,7 @@ body.hero-intro-reveal .hero-headline {
   line-height: 1.5;
   height: 155px;
   vertical-align: middle;
+  white-space: normal !important;
 }
 
 .dtr-empty-state-cell strong {
@@ -6008,11 +6014,129 @@ body.hero-intro-reveal .hero-headline {
   align-items: center;
   font-size: 0.71875rem;
   font-weight: 600;
-  color: #34D399;
-  background: rgba(16, 185, 129, 0.1);
+  color: #60A5FA;
+  background: rgba(59, 82, 165, 0.2);
   padding: 2px 8px;
   border-radius: 4px;
+  border: 1px solid rgba(59, 82, 165, 0.3);
   white-space: nowrap;
+}
+
+/* Tablet & Mobile Breakpoints for DTR */
+@media (max-width: 1024px) {
+  .dtr-grid-layout {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .dtr-action-card, .dtr-table-card {
+    min-height: auto;
+    height: auto;
+  }
+
+  .dtr-table-wrapper {
+    height: 220px;
+    max-height: 250px;
+  }
+
+  .dtr-data-table {
+    min-width: 480px;
+  }
+}
+
+@media (max-width: 640px) {
+  .dash-panel {
+    padding: 12px 10px;
+  }
+
+  .dtr-grid-layout {
+    gap: 12px;
+  }
+
+  .dtr-action-card, .dtr-table-card {
+    padding: 14px 12px;
+    border-radius: 10px;
+  }
+
+  .dtr-card-header {
+    gap: 6px;
+    margin-bottom: 2px;
+  }
+
+  .dtr-badge-live {
+    font-size: 0.625rem;
+  }
+
+  .dtr-status-pill {
+    font-size: 0.6875rem;
+    padding: 2px 8px;
+    height: 22px;
+  }
+
+  .dtr-clock-display {
+    font-size: clamp(1.625rem, 6.5vw, 1.9rem);
+    margin: 4px 0 2px;
+  }
+
+  .dtr-date-display {
+    font-size: 0.75rem;
+    margin-bottom: 4px;
+  }
+
+  .btn-dtr-clock {
+    height: 44px;
+    font-size: 0.8125rem;
+  }
+
+  .dtr-last-log-text {
+    font-size: 0.6875rem;
+    white-space: normal;
+    line-height: 1.3;
+    margin-top: 4px;
+  }
+
+  .dtr-progress-widget {
+    margin-top: 8px;
+    padding: 8px 10px;
+    gap: 6px;
+  }
+
+  .dtr-prog-header, .dtr-prog-footer {
+    font-size: 0.6875rem;
+  }
+
+  .dtr-table-header-row {
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .dtr-table-title {
+    font-size: 0.875rem;
+  }
+
+  .dtr-table-subtitle {
+    font-size: 0.6875rem;
+  }
+
+  .btn-dtr-export {
+    height: 26px;
+    padding: 0 8px;
+    font-size: 0.6875rem;
+  }
+
+  .dtr-table-wrapper {
+    height: 190px;
+    max-height: 210px;
+  }
+
+  .dtr-data-table {
+    min-width: 420px;
+    font-size: 0.75rem;
+  }
+
+  .dtr-data-table th, .dtr-data-table td {
+    padding: 7px 8px;
+  }
 }
 
 /* --- Panel 2: Live Certificate Creator Studio Styles --- */
