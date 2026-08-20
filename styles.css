@@ -270,19 +270,28 @@ ul, ol {
 }
 
 .editorial-tag {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
   font-size: 0.8125rem;
   font-weight: var(--weight-semibold);
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-red);
   margin-bottom: var(--space-xs);
 }
 
 .editorial-tag-center {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: var(--space-xs);
+  width: 100%;
 }
 
 /* --- Noorana Buttons --- */
@@ -448,7 +457,7 @@ ul, ol {
   border-radius: 9999px;
   letter-spacing: -0.01em;
   text-transform: none;
-  display: inline-flex;
+  display: inline-flex !important;
   align-items: center;
   justify-content: center;
   line-height: 1.2;
@@ -457,10 +466,34 @@ ul, ol {
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
   margin-left: 6px;
   vertical-align: middle;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
-.nav-brand:hover .brand-badge {
-  transform: rotate(-1deg) scale(1.06);
+.brand-badge-ojt {
+  font-size: 0.75rem;
+  font-weight: 800;
+  background-color: #3B52A5 !important;
+  color: #FFFFFF !important;
+  padding: 3px 12px;
+  border-radius: 9999px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  transform: rotate(-3deg);
+  box-shadow: 0 3px 8px rgba(59, 82, 165, 0.35);
+  margin-left: 6px;
+  vertical-align: middle;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.nav-brand:hover .brand-badge,
+.editorial-tag:hover .brand-badge-ojt {
+  transform: rotate(-1deg) scale(1.05);
   box-shadow: 0 4px 12px rgba(59, 82, 165, 0.45);
 }
 
@@ -4884,6 +4917,12 @@ ul, ol {
     align-items: center;
   }
 
+  .nav-brand {
+    gap: 8px;
+    display: inline-flex;
+    align-items: center;
+  }
+
   .brand-logo-img {
     width: 40px;
     height: 40px;
@@ -4894,9 +4933,17 @@ ul, ol {
   }
 
   .brand-badge {
-    font-size: 0.6875rem;
-    padding: 2px 8px;
-    margin-left: 4px;
+    display: inline-flex !important;
+    font-size: 0.71875rem !important;
+    padding: 2.5px 8px !important;
+    margin-left: 4px !important;
+  }
+
+  .brand-badge-ojt {
+    display: inline-flex !important;
+    font-size: 0.6875rem !important;
+    padding: 2.5px 9px !important;
+    margin-left: 5px !important;
   }
 
   .hero-headline {
@@ -4954,26 +5001,44 @@ ul, ol {
 
   .nav-container {
     height: 60px;
-    padding-left: 0.875rem;
-    padding-right: 0.875rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .nav-brand {
+    gap: 6px;
+    display: inline-flex;
+    align-items: center;
+    min-width: 0;
   }
 
   .brand-logo-img {
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
   }
 
   .brand-name {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
+    white-space: nowrap;
   }
 
   .brand-badge {
-    display: none;
+    display: inline-flex !important;
+    font-size: 0.625rem !important;
+    padding: 2px 7px !important;
+    margin-left: 3px !important;
+  }
+
+  .brand-badge-ojt {
+    display: inline-flex !important;
+    font-size: 0.625rem !important;
+    padding: 2px 8px !important;
+    margin-left: 4px !important;
   }
 
   .btn-pill-login {
-    padding: 6px 12px;
-    font-size: 0.78125rem;
+    padding: 5px 11px;
+    font-size: 0.75rem;
   }
 
   .hero-noorana {
@@ -4993,6 +5058,37 @@ ul, ol {
   .hours-card-box {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .brand-logo-img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .brand-name {
+    font-size: 0.8125rem;
+  }
+
+  .brand-badge {
+    font-size: 0.5625rem !important;
+    padding: 1.5px 5px !important;
+  }
+
+  .brand-badge-ojt {
+    font-size: 0.5625rem !important;
+    padding: 1.5px 6px !important;
+  }
+
+  .btn-pill-login {
+    padding: 4px 8px;
+    font-size: 0.6875rem;
   }
 }
 
