@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCLEX Amplified Interns &mdash; The Official Internship &amp; OJT Program</title>
+  <meta name="description"
+    content="Official landing page for the NCLEX Amplified Internship and OJT Program. Gain real-world experience, dedicated mentorship, and career readiness.">
+  <meta name="keywords"
+    content="NCLEX Amplified, Internship, OJT Program, On the Job Training, Student Internships, Career Development">
+
+  <!-- Google Fonts: Poppins & Elegant Script Fonts for Certificates -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       CINEMATIC PAGE INTRO SCREEN (REFRESH / LOAD OVERLAY)
+       ========================================================================== -->
+  <div id="page-intro-overlay" class="page-intro-overlay" role="dialog" aria-modal="true"
+    aria-label="Welcome to NCLEX Amplified Internship Portal">
+    <div class="intro-center-content">
+      <div class="intro-logo-single-wrapper">
+        <div class="intro-logo-badge" title="NCLEX Amplified Review Center">
+          <img src="assets/nclex-logo.png" alt="NCLEX Amplified Seal" class="intro-seal-img">
+        </div>
+      </div>
+
+      <div class="intro-brand-title-row">
+        <span class="intro-brand-nclex">NCLEX</span>
+        <span class="intro-brand-amplified">Amplified</span>
+        <span class="intro-interns-pill">Interns</span>
+      </div>
+      <p class="intro-sub-title">THE OFFICIAL INTERNSHIP &amp; OJT PROGRAM</p>
+
+      <!-- Horizontal Fill Loading Bar -->
+      <div class="intro-loader-wrap" aria-label="Loading internship portal">
+        <div class="intro-progress-capsule">
+          <div class="intro-progress-bar" id="intro-progress-bar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       NAVIGATION (NOORANA EXACT LAYOUT)
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="#overview" class="nav-brand" aria-label="NCLEX Amplified Interns Home">
+        <img src="assets/nclex-logo.png" alt="NCLEX Amplified Review Center Logo" class="brand-logo-img">
+        <span class="brand-name"><span class="brand-word-nclex">NCLEX</span> <span
+            class="brand-word-amplified">Amplified</span></span>
+        <span class="brand-badge">Interns</span>
+      </a>
+
+      <nav class="nav-center-menu" aria-label="Primary Navigation">
+        <a href="#overview" class="nav-menu-link">Overview</a>
+        <a href="#program" class="nav-menu-link">Program</a>
+        <a href="#certificate-generator" class="nav-menu-link">Simulator</a>
+        <a href="#faq" class="nav-menu-link">FAQ</a>
+        <a href="#contact" class="nav-menu-link">Contact</a>
+        <a href="https://nclexamplifiedreviewcenter.com/" target="_blank" rel="noopener noreferrer"
+          class="nav-menu-link official-site-link">
+          Official Website
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round"
+            style="display:inline-block; vertical-align:middle; margin-left:3px;" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </nav>
+
+      <div class="nav-right-actions">
+        <button class="btn btn-pill-login open-apply-modal" type="button">
+          Apply Now
+        </button>
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="modal-overlay" id="mobile-drawer-overlay" style="align-items: flex-start; padding-top: 80px;"
+    aria-hidden="true">
+    <div
+      style="background: #FFF; width: 100%; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 16px;">
+      <a href="#overview" class="nav-menu-link mobile-link" style="font-size: 1.125rem; font-weight: 600;">Overview</a>
+      <a href="#program" class="nav-menu-link mobile-link" style="font-size: 1.125rem; font-weight: 600;">Program</a>
+      <a href="#certificate-generator" class="nav-menu-link mobile-link" style="font-size: 1.125rem; font-weight: 600;">Simulator</a>
+      <a href="#faq" class="nav-menu-link mobile-link" style="font-size: 1.125rem; font-weight: 600;">FAQ</a>
+      <a href="#contact" class="nav-menu-link mobile-link" style="font-size: 1.125rem; font-weight: 600;">Contact</a>
+      <a href="https://nclexamplifiedreviewcenter.com/" target="_blank" rel="noopener noreferrer"
+        class="nav-menu-link mobile-link"
+        style="font-size: 1.125rem; font-weight: 600; color: #3B52A5; display: flex; align-items: center; justify-content: space-between;">
+        <span>Official Website</span>
+        <span>↗</span>
+      </a>
+      <button class="btn btn-primary open-apply-modal" type="button" style="width: 100%; margin-top: 8px;">Apply
+        Now</button>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ==========================================================================
+         HERO SECTION (NOORANA CENTERED HERO & PORTAL MOCKUP)
+         ========================================================================== -->
+    <section class="hero-noorana" id="overview" aria-labelledby="hero-title">
+      <div class="container">
+        <span class="editorial-tag editorial-tag-center reveal-text"><span class="brand-word-nclex">NCLEX</span> <span
+            class="brand-word-amplified">AMPLIFIED</span> <span class="brand-badge">INTERNSHIP &amp; OJT</span></span>
+        <h1 class="hero-headline reveal-heading" id="hero-title">
+          Start Your Experience. <br>Build What Comes Next.
+        </h1>
+        <p class="hero-subheadline reveal-text">
+          Gain real-world experience, develop professional skills, collaborate with a dedicated team, and prepare for
+          your next career opportunity through the <span class="brand-word-nclex">NCLEX</span> <span
+            class="brand-word-amplified">Amplified</span> Internship and OJT Program.
+        </p>
+
+        <div class="hero-cta-wrapper reveal-text">
+          <button class="btn btn-primary btn-lg open-apply-modal" type="button">
+            Apply for Internship
+          </button>
+        </div>
+
+        <!-- App Dashboard Mockup Container with Interactive Intern Suite -->
+        <div class="noorana-app-window interactive-dashboard-window" aria-label="NCLEX Amplified I.T. Dashboard Suite">
+          <!-- Window Header Bar with OS controls, Tab Switcher, and User Profile -->
+          <div class="dash-window-header">
+            <div class="dash-header-left">
+              <div class="dash-os-dots" aria-hidden="true">
+                <span class="os-dot dot-red"></span>
+                <span class="os-dot dot-yellow"></span>
+                <span class="os-dot dot-green"></span>
+              </div>
+              <div class="dash-window-title">
+                <span class="dash-live-badge"><span class="pulse-dot"></span> SAMPLE DEMO</span>
+                <span class="dash-title-text">NCLEX Amplified &middot; Intern Portal</span>
+              </div>
+            </div>
+
+            <!-- Tab Switcher Navigation -->
+            <div class="dash-tab-bar" role="tablist" aria-label="Dashboard views">
+              <button class="dash-tab active" data-dash-tab="tab-dtr" role="tab" aria-selected="true">DTR System</button>
+              <button class="dash-tab" data-dash-tab="tab-uiux" role="tab" aria-selected="false">Certificate Creator</button>
+              <button class="dash-tab" data-dash-tab="tab-coding" role="tab" aria-selected="false">Coding</button>
+              <button class="dash-tab" data-dash-tab="tab-mockup" role="tab" aria-selected="false">Overview</button>
+            </div>
+
+            <!-- User Profile in Hero Portal Window Header -->
+            <div class="dash-header-right">
+              <div class="dash-user-chip" title="Intern Applicant Session">
+                <div class="dash-user-avatar">
+                  <span class="user-avatar-initials">IA</span>
+                </div>
+                <div class="dash-user-meta">
+                  <span class="dash-user-name">Intern Applicant</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Window Body Content Panels -->
+          <div class="dash-window-body">
+            
+            <!-- PANEL 1: Automated DTR System -->
+            <div class="dash-panel active" id="tab-dtr" role="tabpanel">
+              <div class="dtr-grid-layout">
+                <!-- Left: Live Clock & Clock In/Out Action Card -->
+                <div class="dtr-action-card">
+                  <div class="dtr-card-header">
+                    <span class="dtr-badge-live">PHILIPPINE STANDARD TIME</span>
+                    <span class="dtr-status-pill" id="dtr-user-status"><span class="status-indicator-dot"></span> Logged Out</span>
+                  </div>
+                  
+                  <div class="dtr-clock-display" id="dtr-live-clock">08:00:00 AM</div>
+                  <div class="dtr-date-display" id="dtr-live-date">Thursday, August 20, 2026</div>
+
+                  <div class="dtr-controls-group">
+                    <button type="button" class="btn-dtr-clock" id="btn-dtr-toggle">
+                      <span id="dtr-btn-label">CLOCK IN FOR TODAY</span>
+                    </button>
+                    <div class="dtr-last-log-text" id="dtr-last-log">Click to start your live shift record.</div>
+                  </div>
+
+                  <!-- Progress Gauge toward OJT hours -->
+                  <div class="dtr-progress-widget">
+                    <div class="dtr-prog-header">
+                      <span>OJT Hours Rendered</span>
+                      <strong id="dtr-hours-text">0 / 500 Hrs (0.0%)</strong>
+                    </div>
+                    <div class="dtr-prog-bar-track">
+                      <div class="dtr-prog-bar-fill" id="dtr-prog-bar-fill" style="width: 0%;"></div>
+                    </div>
+                    <div class="dtr-prog-footer">
+                      <span id="dtr-remaining-text">500 Hours Remaining</span>
+                      <span class="text-neutral" id="dtr-pace-text">Ready to Clock In</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right: Shift Logs History Table -->
+                <div class="dtr-table-card">
+                  <div class="dtr-table-header-row">
+                    <div>
+                      <h4 class="dtr-table-title">Shift Attendance Logs</h4>
+                      <p class="dtr-table-subtitle">Live Daily Time Record Tracker</p>
+                    </div>
+                    <button type="button" class="btn-dtr-export" id="btn-export-dtr">
+                      <span>Export Summary</span>
+                    </button>
+                  </div>
+
+                  <div class="dtr-table-wrapper">
+                    <table class="dtr-data-table">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Time In</th>
+                          <th>Time Out</th>
+                          <th>Rendered</th>
+                          <th>Supervisor</th>
+                        </tr>
+                      </thead>
+                      <tbody id="dtr-history-body">
+                        <!-- Populated by JavaScript -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PANEL 2: UI/UX Live Certificate Creator Studio -->
+            <div class="dash-panel" id="tab-uiux" role="tabpanel">
+              <div class="cert-studio-layout">
+                <!-- Left Column: Interactive Input Controls -->
+                <div class="cert-studio-controls">
+                  <div class="cert-studio-head">
+                    <h4 class="cert-studio-title">Certificate Creator</h4>
+                    <p class="cert-studio-desc">Type your name below to preview your test certificate in real time, then download your high-resolution copy.</p>
+                  </div>
+                  
+                  <div class="cert-form-group">
+                    <label for="cert-live-input-name" class="cert-form-label">Full Name of Applicant / Tester</label>
+                    <input type="text" id="cert-live-input-name" class="cert-text-input" value="Name of Tester" placeholder="Type your full name..." autocomplete="off" spellcheck="false">
+                  </div>
+
+                  <div class="cert-studio-actions">
+                    <button type="button" class="btn-cert-download-main" id="btn-download-tester-cert">
+                      <span>Download Certificate (PNG)</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Right Column: Real-time Live Certificate Canvas Viewport -->
+                <div class="cert-studio-viewport">
+                  <div class="cert-viewport-badge">
+                    <span class="live-dot-pulse"></span> LIVE PREVIEW &middot; REAL-TIME SYNC
+                  </div>
+                  <div class="cert-canvas-wrapper" id="cert-canvas-wrapper">
+                    <img src="certificate/template.png" alt="NCLEX Amplified Certificate of Completion" class="cert-template-image" id="cert-template-preview-img">
+                    <div class="cert-overlay-name" id="cert-overlay-name">Name of Tester</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PANEL 3: Live Coding Assessment & Interactive Test Sandbox -->
+            <div class="dash-panel" id="tab-coding" role="tabpanel">
+              <div class="code-playground-layout">
+                <!-- Top Header: Language Selector, Challenge Target Requirement, and Run Button -->
+                <div class="code-editor-topbar">
+                  <div class="code-topbar-left">
+                    <div class="code-lang-selector-wrap">
+                      <span class="code-lang-label">Language:</span>
+                      <select class="code-lang-select" id="code-lang-select" aria-label="Select Programming Language">
+                        <option value="python">Python 3</option>
+                        <option value="javascript">JavaScript (Node.js)</option>
+                        <option value="typescript">TypeScript</option>
+                        <option value="java">Java</option>
+                        <option value="cpp">C++</option>
+                        <option value="php">PHP</option>
+                        <option value="go">Go</option>
+                        <option value="csharp">C# (.NET)</option>
+                      </select>
+                    </div>
+
+                    <div class="code-target-badge">
+                      <span class="target-badge-label">Required Output:</span>
+                      <code class="target-badge-text">"Internship at NCLEX Amplified"</code>
+                    </div>
+                  </div>
+
+                  <div class="code-topbar-actions">
+                    <button type="button" class="btn-code-clear" id="btn-code-clear" title="Clear Editor">
+                      <span>Clear</span>
+                    </button>
+                    <button type="button" class="btn-code-run" id="btn-code-run">
+                      <span>Run Code</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Code Workspace Grid: Editor + Terminal Output -->
+                <div class="code-workspace-grid">
+                  <!-- Left: Code Editor Window (Starts clean / empty for applicant to type) -->
+                  <div class="code-editor-card">
+                    <div class="code-card-header">
+                      <div class="code-file-badge">
+                        <span class="code-file-dot"></span>
+                        <span id="code-filename-label">main.py</span>
+                      </div>
+                      <span class="code-card-tag">Applicant Code Editor</span>
+                    </div>
+                    <div class="code-editor-body">
+                      <div class="code-line-numbers" id="code-line-numbers" aria-hidden="true">
+                        <span>1</span>
+                      </div>
+                      <textarea class="code-textarea" id="code-textarea" spellcheck="false" autocomplete="off" placeholder="Type your code here to output: Internship at NCLEX Amplified" aria-label="Source code editor"></textarea>
+                    </div>
+                  </div>
+
+                  <!-- Right: Terminal Console Output -->
+                  <div class="code-terminal-card">
+                    <div class="code-card-header">
+                      <div class="terminal-header-status" id="terminal-status-wrap">
+                        <span class="status-dot status-dot-idle" id="terminal-status-dot"></span>
+                        <span id="terminal-status-text">Ready &middot; Awaiting Run</span>
+                      </div>
+                      <span class="code-card-tag" id="terminal-latency-tag">Output Evaluation</span>
+                    </div>
+                    <div class="code-terminal-body">
+                      <div class="terminal-prompt-line">
+                        <span class="terminal-prompt-prefix">$</span>
+                        <span class="terminal-cmd-text" id="terminal-cmd-text">python3 main.py</span>
+                      </div>
+                      <div class="terminal-stdout-container" id="terminal-stdout-container">
+                        <div class="terminal-stdout-empty" id="terminal-stdout-empty">Editor is ready. Type your code on the left and click <strong>"Run Code"</strong> to test if your output is correct.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PANEL 5: Overview Static Mockup -->
+            <div class="dash-panel" id="tab-mockup" role="tabpanel">
+              <img src="assets/hero-dashboard.png" alt="NCLEX Amplified I.T. Intern Dashboard Overview" class="hero-mockup-img" loading="eager">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         NOORANA 3-COLUMN STATEMENT SECTION
+         ========================================================================== -->
+    <section class="section statement-section" aria-labelledby="statement-heading">
+      <div class="container">
+        <h2 class="statement-headline reveal-heading" id="statement-heading">
+          More than an <span class="brand-badge statement-badge">OJT requirement</span> &mdash; a launchpad for your
+          career.
+        </h2>
+        <p class="statement-sub reveal-text">
+          When student internships are structured with dedicated mentorship and practical responsibility:
+        </p>
+
+        <div class="statement-grid reveal-group">
+          <div class="statement-item">
+            <h3 class="statement-item-title">Real Experience</h3>
+            <p class="statement-item-desc">
+              Gain direct exposure to active organizational projects, professional review center operations, and
+              industry-standard workflows.
+            </p>
+          </div>
+
+          <div class="statement-item">
+            <h3 class="statement-item-title">Professional Growth</h3>
+            <p class="statement-item-desc">
+              Develop communication, cross-functional collaboration, critical thinking, ownership, and workplace
+              leadership skills.
+            </p>
+          </div>
+
+          <div class="statement-item">
+            <h3 class="statement-item-title">Career Ready</h3>
+            <p class="statement-item-desc">
+              Graduate with a tangible portfolio of work, verified training hours, and validated professional
+              recommendations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         NOORANA MOVING MARQUEE PHOTO SECTION (INFINITE HORIZONTAL SCROLL)
+         ========================================================================== -->
+    <section class="section photo-row-section" aria-labelledby="photo-row-heading">
+      <div class="marquee-container" aria-label="Internship Moments Moving Carousel">
+        <div class="marquee-track" id="intern-marquee-track">
+          <!-- Real Intern Photos (13 Photos Duplicated for Infinite Seamless Moving Loop) -->
+          <div class="photo-card-noorana" tabindex="0" role="img" aria-label="Internship Moment 1">
+            <img src="marquee%20image/1.jpg" alt="NCLEX Amplified Intern Moment 1" class="marquee-photo-img"
+              loading="eager" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" role="img" aria-label="Internship Moment 2">
+            <img src="marquee%20image/2.jpg" alt="NCLEX Amplified Intern Moment 2" class="marquee-photo-img"
+              loading="eager" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" role="img" aria-label="Internship Moment 3">
+            <img src="marquee%20image/3.jpg" alt="NCLEX Amplified Intern Moment 3" class="marquee-photo-img"
+              loading="eager" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" role="img" aria-label="Internship Moment 4">
+            <img src="marquee%20image/4.jpg" alt="NCLEX Amplified Intern Moment 4" class="marquee-photo-img"
+              loading="eager" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" role="img" aria-label="Internship Moment 5">
+            <img src="marquee%20image/5.jpg" alt="NCLEX Amplified Intern Moment 5" class="marquee-photo-img"
+              loading="eager" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" role="img" aria-label="Internship Moment 6">
+            <img src="marquee%20image/6.jpg" alt="NCLEX Amplified Intern Moment 6" class="marquee-photo-img"
+              loading="eager" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" role="img" aria-label="Internship Moment 7">
+            <img src="marquee%20image/7.jpg" alt="NCLEX Amplified Intern Moment 7" class="marquee-photo-img"
+              loading="eager" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" role="img" aria-label="Internship Moment 8">
+            <img src="marquee%20image/8.jpg" alt="NCLEX Amplified Intern Moment 8" class="marquee-photo-img"
+              loading="eager" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" role="img" aria-label="Internship Moment 9">
+            <img src="marquee%20image/9.jpg" alt="NCLEX Amplified Intern Moment 9" class="marquee-photo-img"
+              loading="eager" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" role="img" aria-label="Internship Moment 10">
+            <img src="marquee%20image/10.jpg" alt="NCLEX Amplified Intern Moment 10" class="marquee-photo-img"
+              loading="eager" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" role="img" aria-label="Internship Moment 11">
+            <img src="marquee%20image/12.jpg" alt="NCLEX Amplified Intern Moment 11" class="marquee-photo-img"
+              loading="eager" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" role="img" aria-label="Internship Moment 12">
+            <img src="marquee%20image/13.jpg" alt="NCLEX Amplified Intern Moment 12" class="marquee-photo-img"
+              loading="eager" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" role="img" aria-label="Internship Moment 13">
+            <img src="marquee%20image/14.jpg" alt="NCLEX Amplified Intern Moment 13" class="marquee-photo-img"
+              loading="eager" />
+          </div>
+
+          <!-- Duplicate set for infinite loop -->
+          <div class="photo-card-noorana" tabindex="0" aria-hidden="true">
+            <img src="marquee%20image/1.jpg" alt="" class="marquee-photo-img" loading="lazy" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" aria-hidden="true">
+            <img src="marquee%20image/2.jpg" alt="" class="marquee-photo-img" loading="lazy" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" aria-hidden="true">
+            <img src="marquee%20image/3.jpg" alt="" class="marquee-photo-img" loading="lazy" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" aria-hidden="true">
+            <img src="marquee%20image/4.jpg" alt="" class="marquee-photo-img" loading="lazy" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" aria-hidden="true">
+            <img src="marquee%20image/5.jpg" alt="" class="marquee-photo-img" loading="lazy" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" aria-hidden="true">
+            <img src="marquee%20image/6.jpg" alt="" class="marquee-photo-img" loading="lazy" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" aria-hidden="true">
+            <img src="marquee%20image/7.jpg" alt="" class="marquee-photo-img" loading="lazy" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" aria-hidden="true">
+            <img src="marquee%20image/8.jpg" alt="" class="marquee-photo-img" loading="lazy" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" aria-hidden="true">
+            <img src="marquee%20image/9.jpg" alt="" class="marquee-photo-img" loading="lazy" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" aria-hidden="true">
+            <img src="marquee%20image/10.jpg" alt="" class="marquee-photo-img" loading="lazy" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" aria-hidden="true">
+            <img src="marquee%20image/12.jpg" alt="" class="marquee-photo-img" loading="lazy" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" aria-hidden="true">
+            <img src="marquee%20image/13.jpg" alt="" class="marquee-photo-img" loading="lazy" />
+          </div>
+          <div class="photo-card-noorana" tabindex="0" aria-hidden="true">
+            <img src="marquee%20image/14.jpg" alt="" class="marquee-photo-img" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h3 class="photo-row-footer-statement reveal-text" id="photo-row-heading">
+          <span class="brand-word-nclex">NCLEX</span> <span class="brand-word-amplified">Amplified</span> empowers
+          interns with practical skills designed for real-world career success.
+        </h3>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TABBED CONTENT HUB &mdash; Program Overview
+         Consolidates: Experience, Curriculum, Opportunities, Journey, Tracks
+         ========================================================================== -->
+    <section class="section content-hub-section" id="program" aria-labelledby="hub-heading">
+      <div class="container">
+        <!-- Hub Header -->
+        <div class="hub-header">
+          <span class="editorial-tag editorial-tag-center reveal-text">EXPLORE THE PROGRAM</span>
+          <h2 class="section-title section-title-center reveal-heading" id="hub-heading">
+            Everything You Need to Know
+          </h2>
+          <p class="section-desc-center reveal-text">
+            Navigate through the complete program framework &mdash; from what you'll learn, to the curriculum,
+            departments, your journey, and available tracks.
+          </p>
+        </div>
+
+        <!-- Premium Tab Navigation Bar -->
+        <div class="hub-tab-bar reveal-card" role="tablist" aria-label="Program Content Tabs">
+          <button class="hub-tab active" data-hub-tab="hub-experience" role="tab" aria-selected="true"
+            id="tab-experience">
+            <span>Experience</span>
+          </button>
+          <button class="hub-tab" data-hub-tab="hub-curriculum" role="tab" aria-selected="false" id="tab-curriculum">
+            <span>Curriculum</span>
+          </button>
+          <button class="hub-tab" data-hub-tab="hub-opportunities" role="tab" aria-selected="false"
+            id="tab-opportunities">
+            <span>Opportunities</span>
+          </button>
+          <button class="hub-tab" data-hub-tab="hub-journey" role="tab" aria-selected="false" id="tab-journey">
+            <span>Journey</span>
+          </button>
+        </div>
+
+        <!-- TAB PANEL: Experience -->
+        <div class="hub-panel active" id="hub-experience" role="tabpanel" aria-labelledby="tab-experience">
+          <div class="features-grid-four reveal-group">
+            <!-- Feature 1 -->
+            <div class="feature-item-noorana">
+              <div class="feature-icon-box" aria-hidden="true">
+                <span class="feature-box-number">01</span>
+              </div>
+              <div>
+                <h3 class="feature-title">Learn</h3>
+                <p class="feature-desc">
+                  Understand professional workflows, industry methodologies, and review center operations through
+                  structured guidance and team onboarding.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-item-noorana">
+              <div class="feature-icon-box" aria-hidden="true">
+                <span class="feature-box-number">02</span>
+              </div>
+              <div>
+                <h3 class="feature-title">Contribute</h3>
+                <p class="feature-desc">
+                  Participate in meaningful tasks, department initiatives, and live organizational activities with
+                  direct
+                  responsibility and guidance.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-item-noorana">
+              <div class="feature-icon-box" aria-hidden="true">
+                <span class="feature-box-number">03</span>
+              </div>
+              <div>
+                <h3 class="feature-title">Collaborate</h3>
+                <p class="feature-desc">
+                  Work closely with experienced professionals and ambitious fellow interns across diverse disciplines in
+                  an open, feedback-driven setting.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-item-noorana">
+              <div class="feature-icon-box" aria-hidden="true">
+                <span class="feature-box-number">04</span>
+              </div>
+              <div>
+                <h3 class="feature-title">Grow</h3>
+                <p class="feature-desc">
+                  Build confidence, expand your portfolio of work, sharpen your problem-solving capabilities, and
+                  establish lasting career readiness.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB PANEL: Curriculum -->
+        <div class="hub-panel" id="hub-curriculum" role="tabpanel" aria-labelledby="tab-curriculum">
+          <!-- Minimal Subheading -->
+          <div class="minimal-curriculum-header">
+            <span class="editorial-tag editorial-tag-center">OFFICIAL TRAINING ROADMAP</span>
+          </div>
+
+          <div class="curriculum-clean-wrapper">
+            <!-- Visual Progression Timeline Navigation -->
+            <div class="roadmap-timeline-container" role="tablist" aria-label="Curriculum Phase Navigation">
+              <div class="timeline-line-track">
+                <div class="timeline-line-fill" id="timeline-line-progress" style="width: 0%;"></div>
+              </div>
+
+              <button class="phase-tab-btn active" data-phase-index="0" role="tab" aria-selected="true"
+                aria-label="Phase 1: Orientation">
+                <div class="phase-node-indicator">
+                  <span class="node-num">01</span>
+                  <span class="node-pulse-ring"></span>
+                  <svg class="node-timer-svg" viewBox="0 0 56 56">
+                    <circle class="timer-circle-bg" cx="28" cy="28" r="24" fill="none" />
+                    <circle class="timer-circle-fg" cx="28" cy="28" r="24" fill="none" />
+                  </svg>
+                </div>
+                <span class="phase-tab-title">Orientation</span>
+              </button>
+              <button class="phase-tab-btn" data-phase-index="1" role="tab" aria-selected="false"
+                aria-label="Phase 2: Front-End Development">
+                <div class="phase-node-indicator">
+                  <span class="node-num">02</span>
+                  <span class="node-pulse-ring"></span>
+                  <svg class="node-timer-svg" viewBox="0 0 56 56">
+                    <circle class="timer-circle-bg" cx="28" cy="28" r="24" fill="none" />
+                    <circle class="timer-circle-fg" cx="28" cy="28" r="24" fill="none" />
+                  </svg>
+                </div>
+                <span class="phase-tab-title">Front-End</span>
+              </button>
+              <button class="phase-tab-btn" data-phase-index="2" role="tab" aria-selected="false"
+                aria-label="Phase 3: Back-End Development">
+                <div class="phase-node-indicator">
+                  <span class="node-num">03</span>
+                  <span class="node-pulse-ring"></span>
+                  <svg class="node-timer-svg" viewBox="0 0 56 56">
+                    <circle class="timer-circle-bg" cx="28" cy="28" r="24" fill="none" />
+                    <circle class="timer-circle-fg" cx="28" cy="28" r="24" fill="none" />
+                  </svg>
+                </div>
+                <span class="phase-tab-title">Back-End</span>
+              </button>
+              <button class="phase-tab-btn" data-phase-index="3" role="tab" aria-selected="false"
+                aria-label="Phase 4: Systems & Support">
+                <div class="phase-node-indicator">
+                  <span class="node-num">04</span>
+                  <span class="node-pulse-ring"></span>
+                  <svg class="node-timer-svg" viewBox="0 0 56 56">
+                    <circle class="timer-circle-bg" cx="28" cy="28" r="24" fill="none" />
+                    <circle class="timer-circle-fg" cx="28" cy="28" r="24" fill="none" />
+                  </svg>
+                </div>
+                <span class="phase-tab-title">IT Support</span>
+              </button>
+              <button class="phase-tab-btn" data-phase-index="4" role="tab" aria-selected="false"
+                aria-label="Phase 5: Turnover">
+                <div class="phase-node-indicator">
+                  <span class="node-num">05</span>
+                  <span class="node-pulse-ring"></span>
+                  <svg class="node-timer-svg" viewBox="0 0 56 56">
+                    <circle class="timer-circle-bg" cx="28" cy="28" r="24" fill="none" />
+                    <circle class="timer-circle-fg" cx="28" cy="28" r="24" fill="none" />
+                  </svg>
+                </div>
+                <span class="phase-tab-title">Turnover</span>
+              </button>
+            </div>
+
+            <!-- Minimal Phase Showcase Display -->
+            <div class="minimal-phase-card" id="curriculum-stage-display" role="region" aria-live="polite">
+              <h3 class="minimal-phase-title" id="stage-title">Orientation &amp; Foundations</h3>
+              <p class="minimal-phase-desc" id="stage-desc">Company orientation, IT policies, ethical conduct,
+                development environment &amp; tooling setup, and web development fundamentals review.</p>
+
+              <div class="minimal-phase-grid">
+                <div class="minimal-grid-col">
+                  <h4 class="minimal-subheading">Core Competencies</h4>
+                  <div class="competencies-simple-list" id="stage-topic-tags">
+                    <div class="competency-simple-item"><span class="competency-dot"></span><span
+                        class="competency-text">Company Culture &amp; IT Org</span></div>
+                    <div class="competency-simple-item"><span class="competency-dot"></span><span
+                        class="competency-text">Code of Conduct &amp; Ethics</span></div>
+                    <div class="competency-simple-item"><span class="competency-dot"></span><span
+                        class="competency-text">VS Code &amp; Git Tooling</span></div>
+                    <div class="competency-simple-item"><span class="competency-dot"></span><span
+                        class="competency-text">Web Standards (HTML/CSS/JS)</span></div>
+                  </div>
+                </div>
+
+                <div class="minimal-grid-col">
+                  <h4 class="minimal-subheading">Key Deliverables</h4>
+                  <ul class="deliverables-simple-list" id="stage-deliverables">
+                    <li class="deliverable-simple-item"><span class="deliverable-dot"></span><span>Workstation
+                        environment configuration &amp; toolchain installation</span></li>
+                    <li class="deliverable-simple-item"><span class="deliverable-dot"></span><span>Git &amp; GitHub
+                        repository workflow setup</span></li>
+                    <li class="deliverable-simple-item"><span class="deliverable-dot"></span><span>Corporate IT ethics
+                        &amp; data compliance sign-off</span></li>
+                    <li class="deliverable-simple-item"><span class="deliverable-dot"></span><span>Baseline code review
+                        &amp; development standards alignment</span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="minimal-phase-footer">
+                <div class="mentor-text-info">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                  <span>Program Mentors: <strong>Gene Mathew Wagas</strong> &amp; <strong>Mark Christian
+                      Naval</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB PANEL: Opportunities (Interactive Paginated Dept Slider) -->
+        <div class="hub-panel" id="hub-opportunities" role="tabpanel" aria-labelledby="tab-opportunities">
+          <div class="opp-slider-container">
+            <!-- Sliding Pages Viewport -->
+            <div class="opp-slider-viewport" id="opp-slider-viewport">
+              <div class="opp-slider-track" id="opp-slider-track">
+                <!-- Page 1: Front-End Web Engineering -->
+                <div class="opp-card-page active-center" tabindex="0" data-dept="Front-End Web Engineering">
+                  <div>
+                    <h3 class="opp-card-title">Front-End Web Engineering</h3>
+                    <p class="opp-card-summary">Developing responsive web user interfaces, component design systems,
+                      HTML5/CSS3 layouts, and interactive client-side JavaScript.</p>
+                  </div>
+                  <div class="opp-card-footer">
+                    <span class="opp-card-req-tag">BSIT / BSCS Credited &middot; Front-End</span>
+                  </div>
+                </div>
+
+                <!-- Page 2: Back-End & API Development -->
+                <div class="opp-card-page side-blurred" tabindex="0" data-dept="Back-End & API Development">
+                  <div>
+                    <h3 class="opp-card-title">Back-End &amp; API Development</h3>
+                    <p class="opp-card-summary">Building RESTful server endpoints, database schema architecture, Node.js
+                      server-side scripting, and secure API integrations.</p>
+                  </div>
+                  <div class="opp-card-footer">
+                    <span class="opp-card-req-tag">BSIT / BSCS Credited &middot; Back-End</span>
+                  </div>
+                </div>
+
+                <!-- Page 3: Software QA & Automation -->
+                <div class="opp-card-page side-blurred" tabindex="0" data-dept="Software QA & Automation">
+                  <div>
+                    <h3 class="opp-card-title">Software QA &amp; Automation</h3>
+                    <p class="opp-card-summary">Executing automated test suites, cross-browser quality assurance
+                      testing, bug tracking diagnostics, and code optimization.</p>
+                  </div>
+                  <div class="opp-card-footer">
+                    <span class="opp-card-req-tag">BSIT / BSCS Credited &middot; Software QA</span>
+                  </div>
+                </div>
+
+                <!-- Page 4: IT Infrastructure & Support -->
+                <div class="opp-card-page side-blurred" tabindex="0" data-dept="IT Infrastructure & Support">
+                  <div>
+                    <h3 class="opp-card-title">IT Infrastructure &amp; Support</h3>
+                    <p class="opp-card-summary">Managing internal workstation hardware, workstation setup, LAN/network
+                      cable management, and technical IT ticket resolution.</p>
+                  </div>
+                  <div class="opp-card-footer">
+                    <span class="opp-card-req-tag">BSIT Credited &middot; Systems &amp; Network</span>
+                  </div>
+                </div>
+
+                <!-- Page 5: Database & Data Analytics -->
+                <div class="opp-card-page side-blurred" tabindex="0" data-dept="Database & Data Analytics">
+                  <div>
+                    <h3 class="opp-card-title">Database &amp; Data Analytics</h3>
+                    <p class="opp-card-summary">Relational database administration, SQL query tuning, data pipeline
+                      structuring, and student performance metrics reporting.</p>
+                  </div>
+                  <div class="opp-card-footer">
+                    <span class="opp-card-req-tag">BSIT / BSCS Credited &middot; Database Admin</span>
+                  </div>
+                </div>
+
+                <!-- Page 6: UI/UX & Product Design -->
+                <div class="opp-card-page side-blurred" tabindex="0" data-dept="UI/UX & Product Design">
+                  <div>
+                    <h3 class="opp-card-title">UI/UX &amp; Product Design</h3>
+                    <p class="opp-card-summary">Designing digital product wireframes, Figma interactive prototypes,
+                      accessible user flows, and web design systems.</p>
+                  </div>
+                  <div class="opp-card-footer">
+                    <span class="opp-card-req-tag">BSIT / BSCS Credited &middot; UI/UX Design</span>
+                  </div>
+                </div>
+
+                <!-- Page 7: DevOps & Cloud Operations -->
+                <div class="opp-card-page side-blurred" tabindex="0" data-dept="DevOps & Cloud Operations">
+                  <div>
+                    <h3 class="opp-card-title">DevOps &amp; Cloud Operations</h3>
+                    <p class="opp-card-summary">Managing Git version control workflows, web server deployment pipelines,
+                      environment configuration, and platform uptime monitoring.</p>
+                  </div>
+                  <div class="opp-card-footer">
+                    <span class="opp-card-req-tag">BSIT / BSCS Credited &middot; DevOps</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Middle Indicator Dots -->
+            <div class="opp-dots-bottom-row">
+              <div class="opp-carousel-dots-list" id="opp-dots-list"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB PANEL: Journey (5-STEP ALTERNATING PROCESS FLOW DIAGRAM - BLUE & RED THEME) -->
+        <div class="hub-panel" id="hub-journey" role="tabpanel" aria-labelledby="tab-journey">
+          <div class="process-flow-container">
+            <div class="process-flow-timeline" id="process-flow-timeline">
+              <!-- Central Horizontal Axis Baseline Line -->
+              <div class="timeline-axis-line"></div>
+
+              <!-- Step 1 (Stage 01: BLUE Theme, Pill ABOVE, Card BELOW) -->
+              <div class="flow-step-node step-pos-0 active" data-stage="0" data-theme="blue">
+                <div class="flow-pill-badge pill-top">STAGE 01</div>
+                <div class="flow-timeline-dot"><span>01</span></div>
+                <div class="flow-card-box card-bottom">
+                  <div class="flow-card-accent-header accent-blue-primary"></div>
+                  <h4 class="flow-card-title">Apply &amp; Orientation</h4>
+                  <p class="flow-card-text">Submit application, complete orientation, and get aligned with your
+                    internship supervisor &amp; team.</p>
+                  <div class="flow-card-footer">Output: OJT Plan Approval</div>
+                </div>
+              </div>
+
+              <!-- Step 2 (Stage 02: RED Theme, Pill BELOW, Card ABOVE) -->
+              <div class="flow-step-node step-pos-1" data-stage="1" data-theme="red">
+                <div class="flow-card-box card-top">
+                  <div class="flow-card-accent-header accent-red-primary"></div>
+                  <h4 class="flow-card-title">Connect &amp; Mentorship</h4>
+                  <p class="flow-card-text">Pair with department leads, review project roadmap, and set clear 500-hour
+                    learning objectives.</p>
+                  <div class="flow-card-footer">Output: Milestone Roadmap</div>
+                </div>
+                <div class="flow-timeline-dot"><span>02</span></div>
+                <div class="flow-pill-badge pill-bottom">STAGE 02</div>
+              </div>
+
+              <!-- Step 3 (Stage 03: BLUE Theme, Pill ABOVE, Card BELOW) -->
+              <div class="flow-step-node step-pos-2" data-stage="2" data-theme="blue">
+                <div class="flow-pill-badge pill-top">STAGE 03</div>
+                <div class="flow-timeline-dot"><span>03</span></div>
+                <div class="flow-card-box card-bottom">
+                  <div class="flow-card-accent-header accent-blue-deep"></div>
+                  <h4 class="flow-card-title">Technical Experience</h4>
+                  <p class="flow-card-text">Build real web applications, participate in code reviews, and handle live
+                    technical operations.</p>
+                  <div class="flow-card-footer">Output: Production Commits</div>
+                </div>
+              </div>
+
+              <!-- Step 4 (Stage 04: RED Theme, Pill BELOW, Card ABOVE) -->
+              <div class="flow-step-node step-pos-3" data-stage="3" data-theme="red">
+                <div class="flow-card-box card-top">
+                  <div class="flow-card-accent-header accent-red-vibrant"></div>
+                  <h4 class="flow-card-title">Skill Growth &amp; Review</h4>
+                  <p class="flow-card-text">Evaluate technical progress, receive supervisor feedback, and refine your
+                    portfolio deliverables.</p>
+                  <div class="flow-card-footer">Output: Skill Portfolio</div>
+                </div>
+                <div class="flow-timeline-dot"><span>04</span></div>
+                <div class="flow-pill-badge pill-bottom">STAGE 04</div>
+              </div>
+
+              <!-- Step 5 (Stage 05: BLUE Theme, Pill ABOVE, Card BELOW) -->
+              <div class="flow-step-node step-pos-4" data-stage="4" data-theme="blue">
+                <div class="flow-pill-badge pill-top">STAGE 05</div>
+                <div class="flow-timeline-dot"><span>05</span></div>
+                <div class="flow-card-box card-bottom">
+                  <div class="flow-card-accent-header accent-blue-navy"></div>
+                  <h4 class="flow-card-title">Program Graduation</h4>
+                  <p class="flow-card-text">Complete required OJT hours, receive your official certificate, and step
+                    into your tech career!</p>
+                  <div class="flow-card-footer">Output: Official Certification</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERN TESTIMONIALS SLIDER (MATCHING REFERENCE DESIGN EXACTLY)
+         ========================================================================== -->
+    <!-- ==========================================================================
+         INTERN TESTIMONIALS SLIDER (MATCHING REFERENCE DESIGN EXACTLY)
+         ========================================================================== -->
+    <section class="section testimonials-section" id="stories" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="testimonials-grid">
+          <!-- Left Column -->
+          <div class="testimonials-left reveal-card">
+            <h2 class="testimonials-title reveal-heading" id="testimonials-heading">
+              What Our Interns Say
+            </h2>
+            <p class="testimonials-subtitle reveal-text">
+              Hear from students and OJT graduates who gained real-world professional experience and built their career
+              foundations at <span class="brand-word-nclex">NCLEX</span> <span
+                class="brand-word-amplified">Amplified</span>.
+            </p>
+
+            <!-- Pill Pagination Controls -->
+            <div class="testimonials-controls-row reveal-text">
+              <div class="testimonials-dots-pagination" role="tablist" aria-label="Testimonial slides">
+                <button class="testimonial-dot active" data-slide="0" role="tab" aria-selected="true"
+                  aria-label="Slide 1"></button>
+                <button class="testimonial-dot" data-slide="1" role="tab" aria-selected="false"
+                  aria-label="Slide 2"></button>
+                <button class="testimonial-dot" data-slide="2" role="tab" aria-selected="false"
+                  aria-label="Slide 3"></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Card with Floating Accents -->
+          <div class="testimonials-right reveal-card">
+            <div class="testimonial-card-wrapper">
+              <!-- Floating Decorative Accent Boxes -->
+              <div class="floating-accent-box accent-top-right" aria-hidden="true"></div>
+              <div class="floating-accent-box accent-bottom-left" aria-hidden="true"></div>              <div class="testimonial-card-stack">
+                <!-- Card 1: Mark Peligros -->
+                <div class="testimonial-card-noorana active" data-index="0">
+                  <div class="testimonial-card-inner">
+                    <div class="testimonial-stars-row">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                      </svg>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                      </svg>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                      </svg>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                      </svg>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                      </svg>
+                    </div>
+                    <div class="quote-text-container">
+                      <span class="quote-mark-watermark" aria-hidden="true">&ldquo;</span>
+                      <p class="testimonial-quote">
+                        "My OJT at NCLEX Amplified gave me real-world experience handling tech support workflows,
+                        workstation setups, and creative digital assets for review operations. The leadership supported me
+                        every step of the way."
+                      </p>
+                    </div>
+                    <div class="testimonial-card-divider"></div>
+                    <div class="testimonial-author-row">
+                      <div class="testimonial-avatar-box">
+                        <img src="intern%20image/mark.png" alt="Mark Peligros" class="testimonial-avatar-img" />
+                      </div>
+                      <div class="testimonial-author-meta">
+                        <span class="testimonial-author-name">Mark Peligros</span>
+                        <span class="testimonial-author-role">Tech Support &amp; Creatives Intern &middot; Pateros
+                          Technological College (BSIT)</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Hover Blur Overlay -->
+                  <div class="testimonial-hover-blur-overlay" aria-hidden="true">
+                    <button type="button" class="btn-view-contribution" data-intern-index="0" aria-label="View Mark Peligros Contribution">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                      </svg>
+                      <span>View Intern Contribution</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Card 2: Keith Ciceron -->
+                <div class="testimonial-card-noorana" data-index="1">
+                  <div class="testimonial-card-inner">
+                    <div class="testimonial-stars-row">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                      </svg>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                      </svg>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                      </svg>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                      </svg>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                      </svg>
+                    </div>
+                    <div class="quote-text-container">
+                      <span class="quote-mark-watermark" aria-hidden="true">&ldquo;</span>
+                      <p class="testimonial-quote">
+                        "As a software and web developer intern, I was given real responsibility on student portal
+                        improvements, web features, and system integrations. The mentors guided me through modern
+                        production engineering standards."
+                      </p>
+                    </div>
+                    <div class="testimonial-card-divider"></div>
+                    <div class="testimonial-author-row">
+                      <div class="testimonial-avatar-box">
+                        <img src="intern%20image/keith.png" alt="Keith Ciceron" class="testimonial-avatar-img" />
+                      </div>
+                      <div class="testimonial-author-meta">
+                        <span class="testimonial-author-name">Keith Ciceron</span>
+                        <span class="testimonial-author-role">Software Developer &amp; Web Developer Intern &middot; San
+                          Sebastian College-Recoletos Manila (BSIT)</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Hover Blur Overlay -->
+                  <div class="testimonial-hover-blur-overlay" aria-hidden="true">
+                    <button type="button" class="btn-view-contribution" data-intern-index="1" aria-label="View Keith Ciceron Contribution">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                      </svg>
+                      <span>View Intern Contribution</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Card 3: Ysmael Trias -->
+                <div class="testimonial-card-noorana" data-index="2">
+                  <div class="testimonial-card-inner">
+                    <div class="testimonial-stars-row">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                      </svg>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                      </svg>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                      </svg>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                      </svg>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B">
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                      </svg>
+                    </div>
+                    <div class="quote-text-container">
+                      <span class="quote-mark-watermark" aria-hidden="true">&ldquo;</span>
+                      <p class="testimonial-quote">
+                        "The team provided structured mentorship and practical technical tasks that directly aligned with
+                        my engineering curriculum. I learned how systems operate at scale and built lasting confidence in
+                        professional workplace collaboration."
+                      </p>
+                    </div>
+                    <div class="testimonial-card-divider"></div>
+                    <div class="testimonial-author-row">
+                      <div class="testimonial-avatar-box">
+                        <img src="intern%20image/ysmael.png" alt="Ysmael Trias" class="testimonial-avatar-img" />
+                      </div>
+                      <div class="testimonial-author-meta">
+                        <span class="testimonial-author-name">Ysmael Trias</span>
+                        <span class="testimonial-author-role">Computer Engineering Intern &middot; Cavite State University
+                          Main (CPE)</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Hover Blur Overlay -->
+                  <div class="testimonial-hover-blur-overlay" aria-hidden="true">
+                    <button type="button" class="btn-view-contribution" data-intern-index="2" aria-label="View Ysmael Trias Contribution">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                      </svg>
+                      <span>View Intern Contribution</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         REQUIREMENTS & ELIGIBILITY (MODERN CLEAN BENTO CARDS)
+         ========================================================================== -->
+    <section class="section requirements-section-noorana" aria-labelledby="req-heading">
+      <div class="container">
+        <span class="editorial-tag editorial-tag-center reveal-text">PREREQUISITES</span>
+        <h2 class="section-title section-title-center reveal-heading" id="req-heading">
+          What You Need to Apply.
+        </h2>
+        <p class="section-desc-center reveal-text">
+          A verified checklist for students, interns, and academic OJT applicants.
+        </p>
+
+        <div class="prereq-grid-cards reveal-group">
+          <!-- Card 1: Degree Programs -->
+          <div class="prereq-card">
+            <h3 class="prereq-card-title">Accepted Degree Programs</h3>
+            <p class="prereq-card-desc">
+              Exclusively open to currently enrolled undergraduate students seeking required academic OJT or practicum
+              course credits:
+            </p>
+            <ul class="prereq-card-list">
+              <li>
+                <svg class="prereq-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span><strong>BS Information Technology (BSIT)</strong></span>
+              </li>
+              <li>
+                <svg class="prereq-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span><strong>BS Computer Science (BSCS)</strong></span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 2: School Endorsement -->
+          <div class="prereq-card">
+            <h3 class="prereq-card-title">School Endorsement</h3>
+            <p class="prereq-card-desc">
+              Official academic clearance issued by your college or university:
+            </p>
+            <ul class="prereq-card-list">
+              <li>
+                <svg class="prereq-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Official Recommendation / Endorsement Letter</span>
+              </li>
+              <li>
+                <svg class="prereq-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Signed by OJT Coordinator or Department Chair</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Required Documents -->
+          <div class="prereq-card">
+            <h3 class="prereq-card-title">Required Documents</h3>
+            <p class="prereq-card-desc">
+              Complete applicant verification dossier ready for submission:
+            </p>
+            <ul class="prereq-card-list">
+              <li>
+                <svg class="prereq-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Updated Resume / Curriculum Vitae (PDF)</span>
+              </li>
+              <li>
+                <svg class="prereq-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Valid Student ID &amp; MOA template (if required)</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 4: Availability & Commitment -->
+          <div class="prereq-card">
+            <h3 class="prereq-card-title">Availability &amp; Commitment</h3>
+            <p class="prereq-card-desc">
+              Professional attendance and collaborative commitment during OJT:
+            </p>
+            <ul class="prereq-card-list">
+              <li>
+                <svg class="prereq-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Flexible schedule (200 to 600 hours aligned with school)</span>
+              </li>
+              <li>
+                <svg class="prereq-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Active participation in department review meetings</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Clean Highlighted Verification Note Banner -->
+        <div class="prereq-footer-note reveal-card">
+          <div class="prereq-note-content">
+            <div class="prereq-note-text">
+              <strong class="prereq-note-strong">100% University Accredited:</strong> We provide formal Certificates of
+              Completion, structured evaluations, and validated attendance records for all partner institutions.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         OFFICIAL ACCREDITED CERTIFICATE OF COMPLETION (BLURRED & PROTECTED PREVIEW)
+         ========================================================================== -->
+    <section class="section certificate-generator-section" id="certificate-generator" aria-labelledby="cert-gen-title">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <span class="editorial-tag editorial-tag-center reveal-text">OFFICIAL CREDENTIAL</span>
+          <h2 class="section-title section-title-center reveal-heading" id="cert-gen-title">
+            Accredited Certificate of Completion
+          </h2>
+          <p class="section-desc-center reveal-text">
+            All verified interns who complete their required academic OJT hours are awarded an official, signed, and university-accredited Certificate of Completion.
+          </p>
+        </div>
+
+        <div class="cert-centered-container reveal-group">
+          <!-- Live Protected Blurred Certificate Container -->
+          <div class="cert-preview-card cert-preview-card-centered">
+            
+            <div class="official-cert-frame cert-frame-blurred-wrapper" id="official-cert-frame">
+              
+              <!-- Blurred Visual Mockup (Obfuscated Elements) -->
+              <div class="cert-inner-border cert-blurred-content" aria-hidden="true">
+                <!-- Cert Header Lockup -->
+                <div class="cert-header-lockup">
+                  <img src="assets/nclex-logo.png" alt="" class="cert-seal-img">
+                  <div>
+                    <h4 class="cert-org-title">NCLEX Amplified Review Center</h4>
+                    <span class="cert-org-sub">Official Information Technology Practicum &amp; Internship Program</span>
+                  </div>
+                </div>
+
+                <div class="cert-headline-award">CERTIFICATE OF COMPLETION</div>
+                <div class="cert-presented-to">This is proudly presented and awarded to</div>
+
+                <!-- Obfuscated Name Display -->
+                <div class="cert-recipient-name-obfuscated">
+                  <span>•••••••••••• ••••••••</span>
+                </div>
+
+                <!-- Obfuscated Statement Body -->
+                <div class="cert-statement-body cert-statement-obfuscated">
+                  for successfully completing and fulfilling required academic internship and industry practicum hours at NCLEX Amplified Review Center, demonstrating high competence in professional software engineering, ethical responsibility, and technical collaboration.
+                </div>
+
+                <!-- Cert Signatures and Verification Footer -->
+                <div class="cert-footer-row">
+                  <div class="cert-sig-box">
+                    <div class="cert-sig-line"></div>
+                    <strong class="cert-signer-name">Official Signatory</strong>
+                    <span class="cert-signer-role">Lead IT &amp; Systems Supervisor</span>
+                  </div>
+
+                  <div class="cert-qr-box">
+                    <div class="cert-qr-code-placeholder">
+                      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#3B52A5" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                    </div>
+                    <span class="cert-verify-id">ID: NA-IT-••••-•••</span>
+                  </div>
+
+                  <div class="cert-sig-box">
+                    <div class="cert-sig-line"></div>
+                    <strong class="cert-signer-name">Official Signatory</strong>
+                    <span class="cert-signer-role">Senior Program Mentor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Prominent Apply Now CTA Button at the Bottom -->
+            <div class="cert-cta-bottom-wrap">
+              <button type="button" class="btn btn-primary btn-lg open-apply-modal cert-apply-btn-primary">
+                Apply Now to Receive this Certificate
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FAQ ACCORDION (NOORANA EXACT MINIMALIST STYLE)
+         ========================================================================== -->
+    <section class="section faq-section-noorana" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <span class="editorial-tag editorial-tag-center reveal-text">HELP &amp; CLARITY</span>
+        <h2 class="section-title section-title-center reveal-heading" id="faq-title">
+          Frequently Asked Questions
+        </h2>
+        <p class="section-desc-center reveal-text">
+          Answers to common questions regarding the <span class="brand-word-nclex">NCLEX</span> <span
+            class="brand-word-amplified">Amplified</span> Internship Program.
+        </p>
+
+        <div class="faq-list-noorana reveal-group" role="region" aria-label="FAQ Accordion">
+          <div class="faq-item-noorana">
+            <button class="faq-btn-noorana" type="button" aria-expanded="false" aria-controls="faq-a1" id="faq-q1">
+              <span>Who can apply for the internship?</span>
+              <svg class="faq-icon-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-noorana" id="faq-a1" role="region" aria-labelledby="faq-q1">
+              <p class="faq-answer-text">
+                This program is open <strong>exclusively to BS Information Technology (BSIT) and BS Computer Science
+                  (BSCS)</strong> undergraduate students needing to complete their required school OJT or practicum
+                curriculum credits.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item-noorana">
+            <button class="faq-btn-noorana" type="button" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">
+              <span>Is the program available for OJT requirements?</span>
+              <svg class="faq-icon-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-noorana" id="faq-a2" role="region" aria-labelledby="faq-q2">
+              <p class="faq-answer-text">
+                Yes. Our internship program is specifically designed to accommodate official university OJT and
+                practicum curriculum requirements. We provide complete documentation including Certificates of
+                Completion, formal evaluations, and attendance tracking required by your school.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item-noorana">
+            <button class="faq-btn-noorana" type="button" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">
+              <span>What departments are available?</span>
+              <svg class="faq-icon-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-noorana" id="faq-a3" role="region" aria-labelledby="faq-q3">
+              <p class="faq-answer-text">
+                We accept interns across seven dedicated departments: Marketing, Technology (Web &amp; Systems),
+                Creative (Visual Design &amp; Multimedia), Operations, Administration, Content (Educational &amp;
+                Research), and Events Management.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item-noorana">
+            <button class="faq-btn-noorana" type="button" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">
+              <span>What documents are required?</span>
+              <svg class="faq-icon-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-noorana" id="faq-a4" role="region" aria-labelledby="faq-q4">
+              <p class="faq-answer-text">
+                Applicants need an updated Resume/CV, an official School Endorsement / Recommendation Letter from your
+                dean or coordinator, a copy of your valid student ID, and your school's MOA template if required.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item-noorana">
+            <button class="faq-btn-noorana" type="button" aria-expanded="false" aria-controls="faq-a5" id="faq-q5">
+              <span>How long is the internship?</span>
+              <svg class="faq-icon-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-noorana" id="faq-a5" role="region" aria-labelledby="faq-q5">
+              <p class="faq-answer-text">
+                The internship duration is flexible to align directly with your school's prescribed hours (typically 200
+                to 600 hours). Working schedules are structured during onboarding to ensure you meet your academic
+                timeline.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item-noorana">
+            <button class="faq-btn-noorana" type="button" aria-expanded="false" aria-controls="faq-a6" id="faq-q6">
+              <span>How do I apply?</span>
+              <svg class="faq-icon-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-noorana" id="faq-a6" role="region" aria-labelledby="faq-q6">
+              <p class="faq-answer-text">
+                Click the "Apply Now" button on this page to open the application portal. Fill in your personal details,
+                select your university and desired department, upload your resume, and submit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PRE-FOOTER CTA BANNER WITH YOU'RE NEXT! WATERMARK BACKGROUND
+         ========================================================================== -->
+    <section class="cta-banner-noorana" aria-labelledby="cta-banner-title">
+      <!-- Watermark Background Text (Dual-Tone Brand Theme Color) -->
+      <div class="cta-watermark-text" aria-hidden="true">
+        <span class="watermark-word-youre">YOU'RE</span> <span class="watermark-word-next">NEXT!</span>
+      </div>
+
+      <div class="container cta-banner-content reveal-card">
+        <h2 class="cta-banner-title reveal-heading" id="cta-banner-title">
+          Your Next Experience Starts Here.
+        </h2>
+        <p class="cta-banner-subtitle reveal-text">
+          Take the next step, gain meaningful experience, and grow professionally with <span
+            class="brand-word-nclex">NCLEX</span> <span class="brand-word-amplified">Amplified</span>.
+        </p>
+        <button class="btn btn-primary open-apply-modal reveal-text" type="button"
+          style="padding: 14px 32px; font-size: 1rem;">
+          Apply Now
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       COMPACT & CLEAN INSTITUTIONAL FOOTER
+       ========================================================================== -->
+  <!-- ==========================================================================
+       FOOTER (MATCHING REFERENCE DESIGN EXACTLY)
+       ========================================================================== -->
+  <!-- ==========================================================================
+       SITE FOOTER (MATCHING WHITE REFERENCE DESIGN FOR INTERNS)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-ref-grid reveal-group">
+        <!-- Col 1: Brand Lockup & Quote -->
+        <div class="footer-col-brand">
+          <div class="footer-brand-lockup-row">
+            <img src="assets/nclex-logo.png" alt="NCLEX Amplified Review Center" class="footer-seal-img">
+            <div class="footer-brand-name-group">
+              <span class="footer-brand-title-text"><span class="brand-word-nclex">NCLEX</span> <span
+                  class="brand-word-amplified">Amplified</span></span>
+              <span class="footer-interns-pill">Interns</span>
+            </div>
+          </div>
+
+          <p class="footer-brand-quote">
+            &ldquo;Founded in 2021, we are the Philippines&rsquo; premier review center, dedicated to empowering nurses
+            and IT interns to conquer the NCLEX and thrive globally.&rdquo;
+          </p>
+
+          <div class="footer-intern-statement-box">
+            <p class="footer-statement-text">This website is made by an intern for NCLEX Amplified Intern Application.
+            </p>
+          </div>
+
+          <div class="footer-social-icons">
+            <a href="https://www.facebook.com/NCLEXAmplifiedReviewCenter" target="_blank" rel="noopener noreferrer"
+              class="social-circle-btn" aria-label="Facebook">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="mailto:amplifiedreviewcenter@gmail.com" class="social-circle-btn" aria-label="Email">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: NAVIGATION -->
+        <div class="footer-col-nav">
+          <h4 class="footer-heading">NAVIGATION</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#program">Overview</a></li>
+            <li><a href="#experience">Program</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" class="open-apply-modal">Apply Now</a></li>
+            <li><a href="https://nclexamplifiedreviewcenter.com/" target="_blank" rel="noopener noreferrer">Official
+                Website ↗</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: WORKING HOURS -->
+        <div class="footer-col-hours">
+          <h4 class="footer-heading">WORKING HOURS</h4>
+          <div class="hours-card-box">
+            <div class="hours-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B52A5" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div class="hours-content-info">
+              <strong class="hours-days-title">Monday &ndash; Saturday</strong>
+              <div class="hours-time-text">8:00 AM &ndash; 5:00 PM</div>
+              <div class="hours-badge-pst">PHILIPPINE STANDARD TIME</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 4: GET IN TOUCH -->
+        <div class="footer-col-contact" id="contact">
+          <h4 class="footer-heading">GET IN TOUCH</h4>
+          <ul class="footer-contact-items-list">
+            <li class="footer-contact-row">
+              <span class="footer-contact-icon-box" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </span>
+              <span class="footer-contact-text">BLK 12 Lot 13, Bahayang Pag-ASA Subd, Molino V Avenida Rizal, Bacoor,
+                4102 Cavite</span>
+            </li>
+            <li class="footer-contact-row">
+              <span class="footer-contact-icon-box" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </span>
+              <a href="mailto:nclexamplifiedhr@gmail.com" class="footer-contact-link">nclexamplifiedhr@gmail.com</a>
+            </li>
+            <li class="footer-contact-row">
+              <span class="footer-contact-icon-box" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </span>
+              <a href="tel:09206510410" class="footer-contact-link">0920 651 0410</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-strip">
+        <span>&copy; 2026 NCLEX Amplified Review Center. All Rights Reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       DEPARTMENT DETAIL MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="dept-modal" role="dialog" aria-modal="true" aria-labelledby="dept-modal-title"
+    aria-hidden="true">
+    <div class="modal-box" style="max-width: 520px;">
+      <div class="modal-top">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <img src="assets/nclex-logo.png" alt="NCLEX Amplified"
+            style="width: 46px; height: 46px; border-radius: 50%; object-fit: contain; flex-shrink: 0;">
+          <h3 class="heading-subsection" id="dept-modal-title">Department Overview</h3>
+        </div>
+        <button class="modal-close-icon-btn" id="dept-modal-close" type="button" aria-label="Close">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-content-area" style="display: flex; flex-direction: column; gap: 16px;">
+        <div class="brand-badge" id="dept-modal-tag" style="align-self: flex-start;">OJT Credited</div>
+        <div>
+          <h4 style="font-size: 0.875rem; font-weight: 600; color: var(--color-navy); margin-bottom: 4px;">Role Scope
+            &amp; Responsibilities:</h4>
+          <p class="body-text" id="dept-modal-scope"></p>
+        </div>
+        <div>
+          <h4 style="font-size: 0.875rem; font-weight: 600; color: var(--color-navy); margin-bottom: 4px;">Target
+            Academic Background:</h4>
+          <p class="body-text" id="dept-modal-req"></p>
+        </div>
+        <button type="button" class="btn btn-primary" id="dept-apply-direct" style="width: 100%; margin-top: 8px;">
+          Apply for this Department
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       INTERN CONTRIBUTION DETAILS MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="intern-modal" role="dialog" aria-modal="true" aria-labelledby="intern-modal-name"
+    aria-hidden="true">
+    <div class="modal-box" style="max-width: 540px;">
+      <div class="modal-top">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <img id="intern-modal-avatar" src="intern%20image/mark.png" alt="Intern Avatar"
+            style="width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 2px solid #3B52A5; flex-shrink: 0; box-shadow: 0 4px 12px rgba(59, 82, 165, 0.2);">
+          <div>
+            <h3 class="heading-subsection" id="intern-modal-name" style="margin-bottom: 2px; font-size: 1.125rem;">Mark Peligros</h3>
+            <span class="intern-modal-role-badge" id="intern-modal-role">Tech Support &amp; Creatives Intern</span>
+          </div>
+        </div>
+        <button class="modal-close-icon-btn" id="intern-modal-close" type="button" aria-label="Close">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-content-area" style="display: flex; flex-direction: column; gap: 14px; padding-top: 1rem;">
+        <div class="intern-modal-school-box" id="intern-modal-school">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B52A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+          </svg>
+          <span id="intern-modal-school-text">Pateros Technological College (BSIT)</span>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.75rem; font-weight: 700; color: #64748B; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px;">
+            Key Contributions &amp; Projects:
+          </h4>
+          <ul class="intern-modal-contributions-list" id="intern-modal-contributions">
+            <!-- Dynamically populated via app.js -->
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.75rem; font-weight: 700; color: #64748B; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px;">
+            Intern Statement:
+          </h4>
+          <div class="intern-modal-quote-box">
+            <p id="intern-modal-quote" style="margin: 0; font-size: 0.84375rem; line-height: 1.6; color: #334155; font-style: italic; text-align: justify; text-justify: inter-word;"></p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 10px; margin-top: 6px;">
+          <button type="button" class="btn btn-secondary" id="intern-modal-close-btn" style="flex: 1;">Close</button>
+          <button type="button" class="btn btn-primary open-apply-modal" style="flex: 1.4;">Apply for Internship</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==========================================================================
+       STICKY MOBILE CTA BAR (INSTANT APPLICATION ACCESS ON MOBILE)
+       ========================================================================== -->
+  <div class="sticky-mobile-cta-bar" aria-label="Quick Application Bar">
+    <div class="mobile-cta-text-info">
+      <strong>NCLEX Amplified Interns</strong>
+      <span>Software Internship</span>
+    </div>
+    <button class="btn btn-primary open-apply-modal" type="button">
+      Apply Now
+    </button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
