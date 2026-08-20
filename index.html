@@ -25,11 +25,17 @@
 
 <body>
 
+  <!-- Accessibility Skip Links -->
+  <a href="#main-content" class="skip-to-content"
+    aria-label="Welcome to NCLEX Amplified Internship Page">
+    Skip to main content
+  </a>
+
   <!-- ==========================================================================
        CINEMATIC PAGE INTRO SCREEN (REFRESH / LOAD OVERLAY)
        ========================================================================== -->
   <div id="page-intro-overlay" class="page-intro-overlay" role="dialog" aria-modal="true"
-    aria-label="Welcome to NCLEX Amplified Internship Portal">
+    aria-label="Welcome to NCLEX Amplified Internship Page">
     <div class="intro-center-content">
       <div class="intro-logo-single-wrapper">
         <div class="intro-logo-badge" title="NCLEX Amplified Review Center">
@@ -45,7 +51,7 @@
       <p class="intro-sub-title">THE OFFICIAL INTERNSHIP &amp; OJT PROGRAM</p>
 
       <!-- Horizontal Fill Loading Bar -->
-      <div class="intro-loader-wrap" aria-label="Loading internship portal">
+      <div class="intro-loader-wrap" aria-label="Loading internship page">
         <div class="intro-progress-capsule">
           <div class="intro-progress-bar" id="intro-progress-bar"></div>
         </div>
@@ -54,14 +60,17 @@
   </div>
 
   <!-- ==========================================================================
-       NAVIGATION (NOORANA EXACT LAYOUT)
+       GLOBAL SITE HEADER (STICKY BLURRED NAVIGATION)
        ========================================================================== -->
-  <header class="site-header" id="site-header">
-    <div class="container nav-container">
-      <a href="#overview" class="nav-brand" aria-label="NCLEX Amplified Interns Home">
-        <img src="assets/nclex-logo.png" alt="NCLEX Amplified Review Center Logo" class="brand-logo-img">
-        <span class="brand-name"><span class="brand-word-nclex">NCLEX</span> <span
-            class="brand-word-amplified">Amplified</span></span>
+  <header class="site-header" id="site-header" role="banner">
+    <div class="header-container">
+      <a href="#" class="brand-lockup" aria-label="NCLEX Amplified Interns Home">
+        <img src="assets/nclex-logo.png" alt="NCLEX Amplified Review Center Logo" class="brand-logo" width="44"
+          height="44" loading="eager">
+        <span class="brand-name">
+          <span class="brand-word-nclex">NCLEX</span>
+          <span class="brand-word-amplified">Amplified</span>
+        </span>
         <span class="brand-badge">Interns</span>
       </a>
 
@@ -108,7 +117,7 @@
           <img src="assets/nclex-logo.png" alt="NCLEX Logo" class="drawer-brand-logo">
           <div class="drawer-brand-info">
             <span class="drawer-brand-name"><span class="brand-word-nclex">NCLEX</span> <span class="brand-word-amplified">Amplified</span></span>
-            <span class="drawer-brand-sub">Internship &amp; OJT Portal</span>
+            <span class="drawer-brand-sub">Internship &amp; OJT Page</span>
           </div>
         </div>
         <button type="button" class="drawer-close-btn" id="drawer-close-btn" aria-label="Close navigation">
@@ -128,7 +137,7 @@
       <!-- Drawer Footer Actions -->
       <div class="drawer-footer-block">
         <a href="https://nclexamplifiedreviewcenter.com/" target="_blank" rel="noopener noreferrer" class="drawer-official-link mobile-link">
-          <span>Official Review Center Website</span>
+          <span>Official NCLEX Amplified Review Center Website</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
         </a>
 
@@ -141,40 +150,47 @@
 
   <main id="main-content">
     <!-- ==========================================================================
-         HERO SECTION (NOORANA CENTERED HERO & PORTAL MOCKUP)
+         HERO SECTION (NOORANA CENTERED HERO & LIVE DASHBOARD MOCKUP)
          ========================================================================== -->
-    <section class="hero-noorana" id="overview" aria-labelledby="hero-title">
+    <section class="section hero-noorana" id="hero" aria-labelledby="hero-main-title">
       <div class="container">
-        <span class="editorial-tag editorial-tag-center reveal-text"><span class="brand-word-nclex">NCLEX</span> <span
-            class="brand-word-amplified">AMPLIFIED</span> <span class="brand-badge brand-badge-ojt">OJT &amp; INTERNSHIP</span></span>
-        <h1 class="hero-headline reveal-heading" id="hero-title">
-          Start Your Experience. <br>Build What Comes Next.
-        </h1>
-        <p class="hero-subheadline reveal-text">
-          Gain real-world experience, develop professional skills, collaborate with a dedicated team, and prepare for
-          your next career opportunity through the <span class="brand-word-nclex">NCLEX</span> <span
-            class="brand-word-amplified">Amplified</span> Internship and OJT Program.
-        </p>
+        <!-- Centered Noorana-Style Content Hierarchy -->
+        <div class="hero-noorana-center">
+          <div class="hero-tag-wrap reveal-item">
+            <span class="editorial-tag hero-editorial-tag">NCLEX AMPLIFIED &bull; <span class="brand-badge-ojt">OJT &amp; INTERNSHIP</span></span>
+          </div>
 
-        <div class="hero-cta-wrapper reveal-text">
-          <button class="btn btn-primary btn-lg open-apply-modal" type="button">
-            Apply for Internship
-          </button>
+          <h1 class="hero-main-title reveal-item" id="hero-main-title">
+            Start Your Experience.<br>
+            <span class="hero-title-gradient">Build What Comes Next.</span>
+          </h1>
+
+          <p class="hero-lead-text reveal-item">
+            Gain real-world experience, develop professional skills, collaborate with a dedicated team, and prepare for
+            your next career opportunity through the <strong>NCLEX <span class="brand-accent">Amplified</span></strong>
+            Internship and OJT Program.
+          </p>
+
+          <div class="hero-actions-group reveal-item">
+            <button class="btn btn-primary btn-lg open-apply-modal hero-primary-cta" type="button">
+              Apply for Internship
+            </button>
+          </div>
         </div>
 
-        <!-- App Dashboard Mockup Container with Interactive Intern Suite -->
-        <div class="noorana-app-window interactive-dashboard-window" aria-label="NCLEX Amplified I.T. Dashboard Suite">
-          <!-- Window Header Bar with OS controls, Tab Switcher, and User Profile -->
-          <div class="dash-window-header">
-            <div class="dash-header-left">
-              <div class="dash-os-dots" aria-hidden="true">
-                <span class="os-dot dot-red"></span>
-                <span class="os-dot dot-yellow"></span>
-                <span class="os-dot dot-green"></span>
+        <!-- Noorana Dashboard Window with 4 Interactive Tabs -->
+        <div class="dash-window-wrapper reveal-item" id="portal-dash-container">
+          <div class="dash-window-card">
+            <!-- Window Title Bar -->
+            <div class="dash-window-header">
+              <div class="dash-traffic-lights">
+                <span class="dash-dot red"></span>
+                <span class="dash-dot yellow"></span>
+                <span class="dash-dot green"></span>
               </div>
-              <div class="dash-window-title">
-                <span class="dash-live-badge"><span class="pulse-dot"></span> SAMPLE DEMO</span>
-                <span class="dash-title-text">NCLEX Amplified &middot; Intern Portal</span>
+              <div class="dash-title-lockup">
+                <span class="dash-badge-live">SAMPLE DEMO</span>
+                <span class="dash-title-text">NCLEX Amplified &middot; Intern Page</span>
               </div>
             </div>
 
