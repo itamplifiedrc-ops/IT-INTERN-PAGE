@@ -7531,14 +7531,16 @@ body.hero-intro-reveal .hero-headline {
 .cert-inner-border {
   border: 1px solid #C5A059;
   border-radius: 12px;
-  padding: 36px 40px;
+  padding: 32px 28px;
   background: radial-gradient(circle at center, #FFFFFF 0%, #FCFBF7 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 16px;
+  gap: 14px;
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Blur & Obfuscation Layer (Light, Clean & Elegant Security Blur) */
@@ -7559,118 +7561,156 @@ body.hero-intro-reveal .hero-headline {
   opacity: 0.98;
 }
 
+/* Centered & Perfectly Balanced Header Lockup */
 .cert-header-lockup {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 14px;
-  text-align: left;
+  text-align: center;
+  gap: 8px;
+  width: 100%;
 }
 
 .cert-seal-img {
-  width: 54px;
-  height: 54px;
+  width: 52px;
+  height: 52px;
   object-fit: contain;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(10, 25, 47, 0.1);
 }
 
+.cert-header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2px;
+}
+
 .cert-org-title {
   margin: 0;
-  font-size: 1.1875rem;
+  font-size: clamp(1rem, 2.6vw, 1.25rem);
   font-weight: 800;
   color: #0A192F;
   letter-spacing: 0.02em;
+  line-height: 1.2;
 }
 
 .cert-org-sub {
-  font-size: 0.78125rem;
+  font-size: clamp(0.6875rem, 1.6vw, 0.8125rem);
   font-weight: 600;
   color: #64748B;
   display: block;
 }
 
 .cert-headline-award {
-  font-size: 1.625rem;
+  font-size: clamp(1.15rem, 3.4vw, 1.625rem);
   font-weight: 900;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   color: #0A192F;
-  margin-top: 6px;
+  margin-top: 4px;
   font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  line-height: 1.25;
 }
 
 .cert-presented-to {
-  font-size: 0.875rem;
+  font-size: clamp(0.75rem, 1.8vw, 0.875rem);
   font-weight: 600;
   color: #64748B;
   font-style: italic;
-}
-
-.cert-recipient-name-obfuscated {
-  font-size: 1.875rem;
-  font-weight: 900;
-  color: #3B52A5;
-  font-family: Georgia, serif;
-  border-bottom: 2px solid #D4AF37;
-  padding: 4px 32px;
-  margin: 4px 0 8px;
-  letter-spacing: 0.2em;
-}
-
-.cert-statement-body {
-  font-size: 0.9375rem;
-  line-height: 1.75;
-  color: #334155;
-  max-width: 560px;
   text-align: center;
 }
 
+.cert-recipient-name-obfuscated {
+  font-size: clamp(0.95rem, 2.4vw, 1.45rem);
+  font-weight: 900;
+  color: #3B52A5;
+  font-family: monospace;
+  border-bottom: 2px solid #D4AF37;
+  padding: 4px 18px 6px;
+  margin: 2px auto 6px;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+  max-width: 90%;
+  display: inline-block;
+  text-align: center;
+}
+
+.cert-statement-body {
+  font-size: clamp(0.78125rem, 1.8vw, 0.9375rem);
+  line-height: 1.7;
+  color: #334155;
+  max-width: 580px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Perfectly Leveled & Balanced Footer Row */
 .cert-footer-row {
-  display: flex;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: start;
   justify-content: space-between;
   width: 100%;
-  margin-top: 24px;
+  margin-top: 16px;
   padding-top: 16px;
-  gap: 16px;
+  gap: 12px;
+  border-top: 1px dashed rgba(212, 175, 55, 0.35);
+  box-sizing: border-box;
 }
 
 .cert-sig-box {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   gap: 3px;
-  flex: 1;
+  width: 100%;
+  justify-content: flex-start;
 }
 
 .cert-sig-line {
-  width: 130px;
+  width: 100%;
+  max-width: 120px;
   height: 1px;
   background: #94A3B8;
   margin-bottom: 4px;
 }
 
 .cert-signer-name {
-  font-size: 0.8125rem;
+  font-size: clamp(0.6875rem, 1.6vw, 0.8125rem);
+  font-weight: 700;
   color: #0A192F;
+  line-height: 1.2;
 }
 
 .cert-signer-role {
-  font-size: 0.6875rem;
+  font-size: clamp(0.5625rem, 1.3vw, 0.6875rem);
   color: #64748B;
+  line-height: 1.3;
 }
 
 .cert-qr-box {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   gap: 3px;
+  padding: 0 4px;
+}
+
+.cert-qr-code-placeholder svg {
+  width: 32px;
+  height: 32px;
 }
 
 .cert-verify-id {
-  font-size: 0.6875rem;
+  font-size: clamp(0.5625rem, 1.3vw, 0.6875rem);
   font-family: monospace;
   color: #64748B;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 /* Bottom Action Container */
@@ -7693,6 +7733,34 @@ body.hero-intro-reveal .hero-headline {
 .cert-apply-btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 16px 36px -4px rgba(59, 82, 165, 0.5);
+}
+
+@media (max-width: 576px) {
+  .cert-inner-border {
+    padding: 20px 14px;
+    gap: 12px;
+  }
+
+  .cert-frame-blurred-wrapper {
+    padding: 8px;
+    border-radius: 16px;
+  }
+
+  .cert-footer-row {
+    gap: 6px;
+    padding-top: 12px;
+    margin-top: 10px;
+  }
+
+  .cert-sig-line {
+    max-width: 90px;
+  }
+
+  .cert-apply-btn-primary {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 0.875rem;
+  }
 }
 
 
