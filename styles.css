@@ -7418,16 +7418,22 @@ body.hero-intro-reveal .hero-headline {
   position: relative;
 }
 
-/* Blur & Obfuscation Layer */
+/* Blur & Obfuscation Layer (Light, Clean & Elegant Security Blur) */
 .cert-blurred-content {
-  filter: blur(14px) saturate(130%);
-  -webkit-filter: blur(14px) saturate(130%);
+  filter: blur(2px) saturate(105%);
+  -webkit-filter: blur(2px) saturate(105%);
   user-select: none;
   -webkit-user-select: none;
   pointer-events: none;
-  opacity: 0.65;
-  transform: scale(1.01);
-  transition: filter 0.3s ease;
+  opacity: 0.95;
+  transform: none;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.cert-frame-blurred-wrapper:hover .cert-blurred-content {
+  filter: blur(1px) saturate(105%);
+  -webkit-filter: blur(1px) saturate(105%);
+  opacity: 0.98;
 }
 
 .cert-header-lockup {
