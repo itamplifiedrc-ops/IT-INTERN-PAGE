@@ -191,6 +191,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const drawerCloseBtn = document.getElementById('drawer-close-btn');
+  if (drawerCloseBtn) {
+    drawerCloseBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeMobileNav();
+    });
+  }
+
   mobileLinks.forEach(link => {
     link.addEventListener('click', () => closeMobileNav());
   });
