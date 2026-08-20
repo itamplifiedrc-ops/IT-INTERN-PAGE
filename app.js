@@ -273,7 +273,8 @@ document.addEventListener('DOMContentLoaded', () => {
       'marquee%20image/10.jpg',
       'marquee%20image/12.jpg',
       'marquee%20image/13.jpg',
-      'marquee%20image/14.jpg'
+      'marquee%20image/14.jpg',
+      'marquee%20image/15.jpg'
     ];
 
     // Fisher-Yates shuffle algorithm
@@ -989,7 +990,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Designed digital promotional banners, social media marketing graphics, and review class announcements.',
         'Provided live technical support during student NCLEX review sessions, network testing, and IT troubleshooting.'
       ],
-      quote: '"My OJT at NCLEX Amplified gave me real-world experience handling tech support workflows, workstation setups, and creative digital assets for review operations. The leadership supported me every step of the way."'
+      quote: '"I would like to express my sincere gratitude to NCLEX Amplified for the opportunity to intern during my college years. This experience provided invaluable exposure to the IT industry, offering deep insights into corporate operations and significantly enhancing my professional skill set."'
     },
     {
       name: 'Keith Ciceron',
@@ -997,7 +998,9 @@ document.addEventListener('DOMContentLoaded', () => {
       school: 'San Sebastian College-Recoletos Manila (BSIT)',
       avatar: 'intern%20image/keith.png',
       contributions: [
-        'Engineered responsive web user interfaces and interactive student exam practice modules.',
+        'Architected and developed the Intern IT Dashboard with an Automated Daily Time Record (DTR) System.',
+        'Engineered and designed the official NCLEX Amplified Interns Landing Page.',
+        'Developed responsive web user interfaces and interactive student exam practice modules.',
         'Built RESTful API endpoints and integrated backend data pipelines using modern JavaScript & Node.js.',
         'Conducted cross-browser quality assurance testing, performance tuning, and frontend accessibility enhancements.'
       ],
